@@ -16,7 +16,7 @@
 		59C393862AAF44CA00BFDA60 /* TreiRadTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C393852AAF44CA00BFDA60 /* TreiRadTests.swift */; };
 		59C393902AAF44CA00BFDA60 /* TreiRadUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C3938F2AAF44CA00BFDA60 /* TreiRadUITests.swift */; };
 		59C393922AAF44CA00BFDA60 /* TreiRadUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C393912AAF44CA00BFDA60 /* TreiRadUITestsLaunchTests.swift */; };
-		59C3939F2AAF46D100BFDA60 /* gameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C3939E2AAF46D100BFDA60 /* gameViewController.swift */; };
+		59C3939F2AAF46D100BFDA60 /* preGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C3939E2AAF46D100BFDA60 /* preGameViewController.swift */; };
 		59C393A12AAF472700BFDA60 /* rulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C393A02AAF472700BFDA60 /* rulesViewController.swift */; };
 		59C393A32AAF4E3400BFDA60 /* inGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59C393A22AAF4E3400BFDA60 /* inGameViewController.swift */; };
 /* End PBXBuildFile section */
@@ -52,7 +52,7 @@
 		59C3938B2AAF44CA00BFDA60 /* TreiRadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TreiRadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		59C3938F2AAF44CA00BFDA60 /* TreiRadUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreiRadUITests.swift; sourceTree = "<group>"; };
 		59C393912AAF44CA00BFDA60 /* TreiRadUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreiRadUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		59C3939E2AAF46D100BFDA60 /* gameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gameViewController.swift; sourceTree = "<group>"; };
+		59C3939E2AAF46D100BFDA60 /* preGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = preGameViewController.swift; sourceTree = "<group>"; };
 		59C393A02AAF472700BFDA60 /* rulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rulesViewController.swift; sourceTree = "<group>"; };
 		59C393A22AAF4E3400BFDA60 /* inGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = inGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,7 +108,7 @@
 				59C3936E2AAF44C900BFDA60 /* AppDelegate.swift */,
 				59C393702AAF44C900BFDA60 /* SceneDelegate.swift */,
 				59C393722AAF44C900BFDA60 /* ViewController.swift */,
-				59C3939E2AAF46D100BFDA60 /* gameViewController.swift */,
+				59C3939E2AAF46D100BFDA60 /* preGameViewController.swift */,
 				59C393A22AAF4E3400BFDA60 /* inGameViewController.swift */,
 				59C393A02AAF472700BFDA60 /* rulesViewController.swift */,
 				59C393742AAF44C900BFDA60 /* Main.storyboard */,
@@ -267,7 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59C3939F2AAF46D100BFDA60 /* gameViewController.swift in Sources */,
+				59C3939F2AAF46D100BFDA60 /* preGameViewController.swift in Sources */,
 				59C393A12AAF472700BFDA60 /* rulesViewController.swift in Sources */,
 				59C393732AAF44C900BFDA60 /* ViewController.swift in Sources */,
 				59C3936F2AAF44C900BFDA60 /* AppDelegate.swift in Sources */,

@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  TreiRad
-//
-//  Created by dator on 2023-09-11.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

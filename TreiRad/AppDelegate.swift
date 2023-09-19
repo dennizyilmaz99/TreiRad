@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  TreiRad
-//
-//  Created by dator on 2023-09-11.
-//
-
 import UIKit
 
 @main
