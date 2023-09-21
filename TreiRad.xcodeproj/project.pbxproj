@@ -452,6 +452,7 @@
 				DEVELOPMENT_TEAM = 9FLN6FC57K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TreiRad/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tre i Rad";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -480,6 +481,7 @@
 				DEVELOPMENT_TEAM = 9FLN6FC57K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = TreiRad/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Tre i Rad";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

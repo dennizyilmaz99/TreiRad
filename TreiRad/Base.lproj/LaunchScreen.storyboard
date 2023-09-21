@@ -17,8 +17,8 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRE I RAD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KM-IH-YYp">
-                                <rect key="frame" x="71.333333333333329" y="393.66666666666669" width="250.66666666666669" height="64.666666666666686"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="55"/>
+                                <rect key="frame" x="68" y="393.66666666666669" width="257.33333333333331" height="64.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="55"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>

@@ -11,11 +11,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func rulesBtn(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "toRulesScreen", sender: self)
     }
     
     @IBAction func startGameBtn(_ sender: UIButton) {
-        
+        performSegue(withIdentifier: "toPreGameViewController", sender: self)
     }
 }
 

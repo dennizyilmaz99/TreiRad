@@ -18,8 +18,12 @@ class inGameViewController: UIViewController {
     @IBOutlet weak var c2: UIButton!
     @IBOutlet weak var c3: UIButton!
     
-    var NOUGHT = "O"
+        var NOUGHT = "O"
         var CROSS = "X"
+    
+        var playerX: String = ""
+        var playerO: String = ""
+    
         
         var board = [[UIButton]]()
         var currentTurn = Turn.Cross
@@ -29,6 +33,8 @@ class inGameViewController: UIViewController {
         
         override func viewDidLoad() {
             super.viewDidLoad()
+            self.navigationItem.setHidesBackButton(true, animated: true)
+            turnLabel.text = playerX
             initBoard()
         }
         
@@ -45,11 +51,11 @@ class inGameViewController: UIViewController {
             
             if checkForVictory(CROSS) {
                 crossesScore += 1
-                resultAlert(title: "X vann!")
+                resultAlert(title: "\(playerX) vann!")
             }
             if checkForVictory(NOUGHT) {
                 noughtsScore += 1
-                resultAlert(title: "O vann!")
+                resultAlert(title: "\(playerO) vann!")
             }
             
             if fullBoard() {
@@ -83,7 +89,7 @@ class inGameViewController: UIViewController {
         }
         
         func resultAlert(title: String) {
-            let message = "\nX: " + String(crossesScore) + "\n\nO: " + String(noughtsScore)
+            let message = "\n\(playerX): " + String(crossesScore) + "\n\(playerO): " + String(noughtsScore)
             let ac = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
             ac.addAction(UIAlertAction(title: "Starta om", style: .default, handler: { (_) in self.resetBoard()
             }))
@@ -102,17 +108,8 @@ class inGameViewController: UIViewController {
                     button.isEnabled = true
                 }
             }
-            
-            if currentTurn == .Nought {
-                currentTurn = .Cross
-                turnLabel.text = CROSS
-            } else {
-                currentTurn = .Nought
-                turnLabel.text = NOUGHT
-            }
-            
             currentTurn = Turn.Cross
-            turnLabel.text = CROSS
+            turnLabel.text = playerX
         }
         
         func fullBoard() -> Bool {
@@ -131,8 +128,24 @@ class inGameViewController: UIViewController {
                 sender.setTitle(currentTurn == .Nought ? NOUGHT : CROSS, for: .normal)
                 sender.isEnabled = false
                 currentTurn = (currentTurn == .Nought) ? .Cross : .Nought
-                turnLabel.text = (currentTurn == .Nought) ? NOUGHT : CROSS
+                turnLabel.text = (currentTurn == .Nought) ? playerO : playerX
             }
         }
+    @IBAction func quitBtn(_ sender: UIButton) {
+        let alertController = UIAlertController(title: "Är du säker?", message: "Spelet kommer att avslutas om du går vidare.", preferredStyle: .alert)
+
+              let quitAction = UIAlertAction(title: "Avsluta", style: .destructive) { (action) in
+                  if let navigationController = self.navigationController {
+                      navigationController.popToRootViewController(animated: true)
+                  }
+                  print("Användaren tryckte på OK")
+              }
+        let cancelAction = UIAlertAction(title: "Avbryt", style: .default) { (action) in}
+
+              alertController.addAction(cancelAction)
+              alertController.addAction(quitAction)
+            
+              present(alertController, animated: true, completion: nil)
     }
+}
 
